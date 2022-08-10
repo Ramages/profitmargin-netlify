@@ -1,4 +1,4 @@
-export default [
+const daStocks = [
     {
         "id": 1,
         "ticker": "A",
@@ -24749,3 +24749,5 @@ export default [
         "value": 13.79
     }
 ]
+
+export default daStocks;
