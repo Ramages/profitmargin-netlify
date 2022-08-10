@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    height: 8em;
+    display: flex;
+    padding: 0.69em 1.25em;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    gap: 16rem;
+}
+
+th{
+    background-color: #DEDEDE;
+    border-bottom: 1px solid #000000;
+}
+
+td {
+    border-bottom: 1px solid #000000;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #CCFFFF;
+}
+
+table{
+    border-spacing: 0;
+    border: 2px solid #000000;
+}
+
+.rainbow-text{
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+section {
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero--text {
+    margin-top: 0;
+}
+
+.companies {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card--image {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.card--title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.clock{
+    color: lime;
+    align-self: center;
+    margin-left: auto;
+    font-size: 35px;
+}
+
+.table th.up{
+    background-image: url("./images/up_arrow.png");
+}
+
+.table th.down{
+    background-image: url("./images/down_arrow.png");
+}
+
+.table th.default{
+    background-image: url("./images/default.png");
+}
+
+th.up,
+th.default,
+th.down {
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
